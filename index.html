@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering AI Agents: A New Era in Software Engineering</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #e1e1db;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .book-container {
+            position: relative;
+            max-width: 350px;
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .book-container:hover {
+            transform: scale(1.05);
+        }
+
+        .book-link {
+            display: block;
+            text-decoration: none;
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .cover-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .subtitle-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #0f2a3a;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #a0eae5;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+            letter-spacing: 0.5px;
+        }
+
+        .description {
+            text-align: center;
+            color: #757575;
+            margin-top: 30px;
+            font-size: 1.1rem;
+            font-weight: 300;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .click-hint {
+            text-align: center;
+            color: #757575;
+            margin-top: 15px;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .book-container {
+                max-width: 300px;
+            }
+            
+            .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .subtitle-overlay {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .book-container {
+                max-width: 250px;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+            
+            .subtitle-overlay {
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-content">
+        <div class="book-container">
+            <a href="book1/index.html" class="book-link" aria-label="Read Mastering AI Agents book">
+                <img src="cover.png" alt="Mastering AI Agents Book Cover" class="cover-image">
+                <div class="subtitle-overlay">
+                    <div class="subtitle">A New Era in Software Engineering</div>
+                </div>
+            </a>
+        </div>
+
+        <p class="description">
+            Author: Mario Cartsburg
+        </p>
+        
+        <p class="click-hint">
+            Click the cover to start reading
+        </p>
+    </div>
+</body>
+</html>
