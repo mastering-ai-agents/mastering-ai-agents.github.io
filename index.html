@@ -112,11 +112,119 @@
                 padding: 12px;
             }
         }
+
+        .price-tag {
+            position: absolute;
+            top: -30px;
+            right: -40px;
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
+            z-index: 10;
+            transform: rotate(15deg);
+            border: 2px solid #fff;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+            animation: pulse 2s infinite;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        .price-tag .free-text {
+            display: block;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .price-tag .premium-text {
+            display: block;
+            font-size: 0.75rem;
+            font-weight: normal;
+            opacity: 0.9;
+            margin-top: 2px;
+        }
+
+        .price-tag::before {
+            content: "FREEMIUM";
+            position: absolute;
+            top: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #333;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.7rem;
+            font-weight: normal;
+            white-space: nowrap;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: rotate(15deg) scale(1);
+            }
+            50% {
+                transform: rotate(15deg) scale(1.05);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .price-tag {
+                font-size: 0.9rem;
+                padding: 6px 10px;
+                top: -3px;
+                right: -3px;
+            }
+            
+            .price-tag .free-text {
+                font-size: 1rem;
+            }
+            
+            .price-tag .premium-text {
+                font-size: 0.7rem;
+            }
+            
+            .price-tag::before {
+                font-size: 0.6rem;
+                top: -16px;
+                padding: 1px 6px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .price-tag {
+                font-size: 0.8rem;
+                padding: 5px 8px;
+                top: -2px;
+                right: -2px;
+            }
+            
+            .price-tag .free-text {
+                font-size: 0.9rem;
+            }
+            
+            .price-tag .premium-text {
+                font-size: 0.65rem;
+            }
+            
+            .price-tag::before {
+                font-size: 0.55rem;
+                top: -14px;
+                padding: 1px 5px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="page-content">
         <div class="book-container">
+            <div class="price-tag">
+                <span class="free-text">START FREE</span>
+                <span class="premium-text">Premium €4.99</span>
+            </div>
             <a href="book1/index.html" class="book-link" aria-label="Read Mastering AI Agents book">
                 <img src="cover.jpg" alt="Mastering AI Agents Book Cover" class="cover-image">
                 <div class="subtitle-overlay">

@@ -1,1 +1,1 @@
-[Mastering AI Agents: A New Era In Software Engineering](https://mastering-ai-agents.github.io/)
+[Mastering AI Agents](https://mastering-ai-agents.github.io/)
