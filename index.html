@@ -66,6 +66,21 @@
             letter-spacing: 1.2px;
         }
 
+        .category {
+            position: absolute;
+            top: 27.5%;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #91d3e3;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+            letter-spacing: 2px;
+            z-index: 5;
+            font-style: italic;
+        }
+
         .description {
             text-align: center;
             color: #757575;
@@ -75,6 +90,10 @@
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        .description a {
+            color: #757575;
         }
 
         .click-hint {
@@ -91,11 +110,16 @@
             }
             
             .subtitle {
-                font-size: 1.1rem;
+                font-size: 1rem;
             }
             
             .subtitle-overlay {
-                padding: 15px;
+                padding: 20px;
+            }
+            
+            .category {
+                font-size: 1rem;
+                letter-spacing: 1.5px;
             }
         }
 
@@ -105,11 +129,16 @@
             }
             
             .subtitle {
-                font-size: 1rem;
+                font-size: 0.9rem;
             }
             
             .subtitle-overlay {
-                padding: 12px;
+                padding: 15px;
+            }
+            
+            .category {
+                font-size: 0.9rem;
+                letter-spacing: 1px;
             }
         }
 
@@ -227,6 +256,9 @@
             </div>
             <a href="book1/index.html" class="book-link" aria-label="Read Mastering AI Agents book">
                 <img src="cover.jpg" alt="Mastering AI Agents Book Cover" class="cover-image">
+                <div class="category">
+                    — agentic coding —
+                </div>
                 <div class="subtitle-overlay">
                     <div class="subtitle">FROM VIBE CODING TO SPECIFICATION-FIRST<br>AI ENGINEERING</div>
                 </div>
@@ -234,7 +266,7 @@
         </div>
 
         <p class="description">
-            Author: Mario Cartsburg
+            Author: <a href="mailto:laenger.kitzeln42@icloud.com" target="_blank" rel="noopener noreferrer">Mario Cartsburg</a>
         </p>
         
         <p class="click-hint">
