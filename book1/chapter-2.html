@@ -186,7 +186,7 @@
 <p><strong>The Result</strong>: Developers spend more time fighting their environment than leveraging AI capabilities. That often leads to the perception that AI is not helpful and rather slows down development processes than amplifying them.</p>
 <h3 id="the-hidden-productivity-killers"><a class="header" href="#the-hidden-productivity-killers">The Hidden Productivity Killers</a></h3>
 <p><strong>Context Switching Overhead:</strong></p>
-<pre><code>Traditional Workflow:
+<pre><code class="language-text">Traditional Workflow:
 Idea → Research → Plan → Code → Debug → Document → Deploy
 (Each step requires different tools, different mental models)
 
@@ -203,9 +203,19 @@ AI utilization: &lt;20%
 <h3 id="the-new-development-stack"><a class="header" href="#the-new-development-stack">The New Development Stack</a></h3>
 <p><strong>Core Philosophy</strong>: Every tool and process should amplify AI collaboration, not hinder it, in this new era of software engineering.</p>
 <h3 id="1-universal-ai-integrated-editor"><a class="header" href="#1-universal-ai-integrated-editor">1. Universal AI-Integrated Editor</a></h3>
-<p><strong>Recommended</strong>: <a href="https://code.visualstudio.com/">Visual Studio Code</a> + <a href="https://roocode.com/">Roo Code</a> Plugin</p>
-<p>While there are numerous AI-powered development tools available in the market today, this combination of VSCode and Roo represents a particularly solid choice. It’s community-driven with extensive real-world testing, ensuring reliability and continuous improvement based on developer feedback.
-The concepts and methodologies presented in this book have been thoroughly tested with the proposed tool combination, but they are designed to be adaptable and should work effectively with other AI development tool combinations as well.</p>
+<p><strong>For Budget-Conscious Developers</strong>: <a href="https://trae.ai/">Trae AI</a></p>
+<p>If you’re looking to start experimenting with AI-first development without complex setup or high costs, Trae AI offers an excellent entry point. It provides built-in access to large language models like Claude Sonnet 4 at a very affordable price, making it ideal for developers who want to begin their AI-first journey immediately.</p>
+<p><strong>Why Trae AI is Perfect for Getting Started:</strong></p>
+<ul>
+<li><strong>Built-in Model Access</strong>: No need to configure external AI backends</li>
+<li><strong>Extremely Affordable</strong>: Very competitive pricing for model access</li>
+<li><strong>Zero Setup</strong>: Start coding with AI assistance immediately</li>
+<li><strong>Easy Experimentation</strong>: Perfect for learning AI-first methodologies</li>
+<li><strong>Professional Grade</strong>: Despite the budget-friendly approach, it provides professional-level AI assistance</li>
+</ul>
+<p><strong>For Advanced Teams</strong>: <a href="https://code.visualstudio.com/">Visual Studio Code</a> + <a href="https://roocode.com/">Roo Code</a> Plugin</p>
+<p>While there are numerous AI-powered development tools available in the market today, this combination of VS Code and Roo represents a particularly solid choice for teams requiring more customization. It’s community-driven with extensive real-world testing, ensuring reliability and continuous improvement based on developer feedback.
+The concepts and methodologies presented in this book have been thoroughly tested with this tool combination, but they are designed to be adaptable and should work effectively with other AI development tool combinations as well.</p>
 <p><strong>Why This Combination Works:</strong></p>
 <ul>
 <li><strong>Language Agnostic</strong>: AI handles syntax across all languages</li>
@@ -214,7 +224,7 @@ The concepts and methodologies presented in this book have been thoroughly teste
 <li><strong>Iteration-Friendly</strong>: Rapid spec-to-code-to-refinement cycles</li>
 <li><strong>Community-Proven</strong>: Extensively tested by developers worldwide</li>
 </ul>
-<h3 id="2-ai-backend-selection"><a class="header" href="#2-ai-backend-selection">2. AI Backend Selection</a></h3>
+<h3 id="2-ai-backend-selection-for-vs-code--roo-code-setup"><a class="header" href="#2-ai-backend-selection-for-vs-code--roo-code-setup">2. AI Backend Selection (For VS Code + Roo Code Setup)</a></h3>
 <p><strong>For Enterprise Teams</strong>: <a href="https://aws.amazon.com/bedrock/">AWS Bedrock</a></p>
 <ul>
 <li>Enterprise security and compliance</li>
@@ -265,63 +275,15 @@ The concepts and methodologies presented in this book have been thoroughly teste
 <blockquote>
 <p><strong>Future-Proofing Note</strong>: Later versions of Sonnet (&gt;4) will undoubtedly improve upon the capabilities described in this book, offering enhanced reasoning, better code generation, and more sophisticated understanding of complex development workflows. When these newer versions become available, they should be adopted immediately as they will make the AI-first development methodologies presented here even more powerful and efficient.</p>
 </blockquote>
-<h3 id="3-installing-the-specification-first-mode"><a class="header" href="#3-installing-the-specification-first-mode">3. Installing the Specification-First Mode</a></h3>
-<p>Before diving into diagram integration, you’ll want to install the <strong>Specification-First mode</strong> for Roo Code. This specialized mode is essential for applying the methodologies covered in Chapters 4 and 5, providing structured workflows for specification-first development.</p>
-<p><strong>Why You Need This Mode:</strong></p>
-<ul>
-<li><strong>Structured Specification Workflow</strong>: Guides you through systematic specification creation</li>
-<li><strong>AI-Optimized Templates</strong>: Pre-built templates that work seamlessly with AI assistance</li>
-<li><strong>Quality Assurance Integration</strong>: Built-in validation for specification completeness</li>
-<li><strong>Production-Ready Focus</strong>: Designed for building maintainable, scalable software systems</li>
-</ul>
-<p><strong>Installation Steps:</strong></p>
-<ol>
-<li>
-<p><strong>Clone the Roo Modes repository:</strong></p>
-<pre><code class="language-bash">git clone https://github.com/mastering-ai-agents/roo-modes.git
-</code></pre>
-</li>
-<li>
-<p><strong>Create the Roo home directory:</strong></p>
-<ul>
-<li>Navigate to your user’s home directory</li>
-<li>Create a <code>.roo</code> folder if it doesn’t already exist</li>
-</ul>
-</li>
-<li>
-<p><strong>Install the mode files:</strong></p>
-<ul>
-<li>Copy the <code>rules-specification-first</code> folder from the cloned repository to your <code>.roo</code> directory</li>
-<li>Ensure all contents are preserved during the copy operation</li>
-</ul>
-</li>
-<li>
-<p><strong>Import the mode in Roo Code:</strong></p>
-<ul>
-<li>Open the Roo Code panel in VSCode</li>
-<li>Click the three-dot menu (⋯) in the panel</li>
-<li>Select “Modes” from the dropdown menu</li>
-<li>Scroll down and click “Import Mode”</li>
-<li>Navigate to your cloned <code>roo-modes</code> directory</li>
-<li>Select the <code>specification-first-mode.yaml</code> file</li>
-<li>Import it as a global mode</li>
-</ul>
-</li>
-</ol>
-<p><strong>Verification:</strong>
-Once installed, you should see “📋 Specification-First” available in your Roo Code modes list. To verify the mode is working correctly:</p>
-<ol>
-<li><strong>Switch to the Specification-First mode</strong> in your Roo Code panel</li>
-<li><strong>Test the mode</strong> by asking the AI this exact prompt:
-<pre><code>tell me if you know the specification-first project structure
-</code></pre>
-</li>
-<li><strong>Expected Response</strong>: The AI should respond with the exact project structure and key principles you’ll learn in Chapter 4, confirming the mode has access to the specialized knowledge needed for specification-first development.</li>
-</ol>
-<p>This mode will become your primary tool for the structured development approaches covered in the upcoming chapters.</p>
+<h3 id="3-specification-first-toolkit"><a class="header" href="#3-specification-first-toolkit">3. Specification-First Toolkit</a></h3>
+<p>For the structured development approaches covered in Chapters 4 and 5, you should use the <strong>Specification-First Toolkit</strong> included with this book. This toolkit provides project initialization scripts and templates that are useful for your specification-first development experience.</p>
+<p>This toolkit is <strong>compatible with any AI-powered IDE</strong> and works seamlessly across different development environments. It significantly reduces project setup issues and ensures consistent, structured development workflows that maximize AI collaboration effectiveness. The toolkit provides the foundational structure needed for specification-first development and eliminates common setup errors.</p>
+<blockquote>
+<p><strong>Usage Guide</strong>: Complete usage instructions for the Specification-First Toolkit are available in <strong>Appendix A: Specification-First Toolkit</strong>.</p>
+</blockquote>
 <h3 id="4-diagram-integration-for-specifications"><a class="header" href="#4-diagram-integration-for-specifications">4. Diagram Integration for Specifications</a></h3>
 <p><strong>Required Plugin</strong>: <a href="https://github.com/mjbvz/vscode-markdown-mermaid">Markdown Preview Mermaid Support</a></p>
-<p>Modern AI-first development relies heavily on visual specifications that both humans and AI can understand. This VSCode extension enables you to embed diagrams directly into your markdown specifications using Mermaid syntax.</p>
+<p>Modern AI-first development relies heavily on visual specifications that both humans and AI can understand. This VS Code extension enables you to embed diagrams directly into your markdown specifications using Mermaid syntax.</p>
 <p><strong>Why This Plugin is Essential:</strong></p>
 <ul>
 <li><strong>Human-Readable</strong>: Visual diagrams make specifications clearer for team collaboration</li>
@@ -331,10 +293,10 @@ Once installed, you should see “📋 Specification-First” available in your 
 </ul>
 <p><strong>Installation:</strong></p>
 <ol>
-<li>Open VSCode Extensions panel (Ctrl+Shift+X or Cmd+Shift+X)</li>
+<li>Open VS Code/Trae AI Extensions panel (Ctrl+Shift+X or Cmd+Shift+X)</li>
 <li>Search for “Markdown Preview Mermaid Support”</li>
 <li>Install the extension</li>
-<li>Restart VSCode to activate the extension</li>
+<li>Restart VS Code/Trae AI to activate the extension</li>
 </ol>
 <p><strong>Benefits for AI Collaboration:</strong></p>
 <ul>
@@ -351,7 +313,7 @@ Once installed, you should see “📋 Specification-First” available in your 
 <li><strong>Vibe Coding</strong> (Chapter 3): The rapid prototyping approach for creative exploration and quick validation of ideas</li>
 <li><strong>Specification-First Development</strong> (Chapter 4): The structured approach for building production-ready, maintainable software systems</li>
 </ul>
-<p>Each approach serves a specific purpose in the modern developer’s toolkit. Understanding when and how to use each one will determine whether you merely dabble with AI assistance or truly transform your development capabilities.</p>
+<p>Each approach serves a specific purpose in your modern developer’s toolkit. Understanding when and how to use each one will determine whether you merely dabble with AI assistance or truly transform your development capabilities.</p>
 <p>Let’s start with the approach that will change how you think about turning ideas into working prototypes…</p>
 
                     </main>
