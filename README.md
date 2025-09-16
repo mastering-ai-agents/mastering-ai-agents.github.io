@@ -1,1 +1,1 @@
-[Mastering AI Agents](https://mastering-ai-agents.github.io/)
+Read this book at [Mastering AI Agents](https://mastering-ai-agents.com/)
